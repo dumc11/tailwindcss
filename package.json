@@ -21,6 +21,7 @@
     "prepare": "npm run babelify && babel-node src/build.js",
     "watch": "nodemon -e js,css --watch src --exec 'babel-node src/build.js'",
     "style": "eslint .",
+    "style:fix": "eslint --fix .",
     "test": "jest && eslint ."
   },
   "devDependencies": {
@@ -49,7 +50,8 @@
     "nodemon": "^1.11.0",
     "postcss": "^6.0.9",
     "postcss-functions": "^3.0.0",
-    "stylefmt": "^6.0.0"
+    "stylefmt": "^6.0.0",
+    "tachyons": "^4.9.0"
   },
   "browserslist": [
     "> 1%"
