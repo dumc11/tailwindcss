@@ -47,6 +47,27 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
+  'black-10': '#22292f',
+  'black-20': '#22292f',
+  'black-30': '#22292f',
+  'black-40': '#22292f',
+  'black-50': '#22292f',
+  'black-60': '#22292f',
+  'black-70': '#22292f',
+  'black-80': '#22292f',
+  'black-90': '#22292f',
+
+  'white': '#22292f',
+  'white-10': '#22292f',
+  'white-20': '#22292f',
+  'white-30': '#22292f',
+  'white-40': '#22292f',
+  'white-50': '#22292f',
+  'white-60': '#22292f',
+  'white-70': '#22292f',
+  'white-80': '#22292f',
+  'white-90': '#22292f',
+
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -96,40 +117,14 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
+  'dark-blue': '#2779bd',
   'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
-
-  'indigo-darkest': '#191e38',
-  'indigo-darker': '#2f365f',
-  'indigo-dark': '#5661b3',
-  'indigo': '#6574cd',
-  'indigo-light': '#7886d7',
-  'indigo-lighter': '#b2b7ff',
-  'indigo-lightest': '#e6e8ff',
-
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
-
-  'pink-darkest': '#451225',
-  'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
+  'lightest-blue': '#eff8ff',
 }
 
 module.exports = {
+
+  library: 'tachyons',
 
   /*
   |-----------------------------------------------------------------------------
@@ -247,19 +242,17 @@ module.exports = {
   | Class name: .text-{size}
   |
   */
-
   textSizes: {
-    'xs': '.75rem',     // 12px
-    'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
-    'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
+    '7': '.75rem',
+    '6': '.875rem',
+    '5': '1rem',
+    '4': '1.25rem',
+    '3': '1.5rem',
+    '2': '2.25rem',
+    '1': '3rem',
+    'subheading': '5rem',
+    'heading': '6rem',
   },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -276,15 +269,15 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
-    'light': 300,
-    'normal': 400,
-    'medium': 500,
-    'semibold': 600,
-    'bold': 700,
-    'extrabold': 800,
-    'black': 900,
+    '1': 100,
+    '2': 200,
+    '3': 300,
+    '4': 400,
+    '5': 500,
+    '6': 600,
+    '7': 700,
+    '8': 800,
+    '9': 900,
   },
 
 
@@ -301,9 +294,10 @@ module.exports = {
   */
 
   leading: {
-    'none': 1,
-    'tight': 1.25,
-    'normal': 1.5,
+    'none': 0,
+    'solid': 1,
+    'title': 1.25,
+    'copy': 1.5,
     'loose': 2,
   },
 
@@ -321,9 +315,9 @@ module.exports = {
   */
 
   tracking: {
-    'tight': '-0.05em',
-    'normal': '0',
-    'wide': '0.05em',
+    'tight': '-.05em',
+    'normal': '.1em',
+    'wide': '.25em',
   },
 
 
@@ -375,9 +369,11 @@ module.exports = {
   borderWidths: {
     default: '1px',
     '0': '0',
-    '2': '2px',
-    '4': '4px',
-    '8': '8px',
+    '1': '.125rem',
+    '2': '.25rem',
+    '3': '.5rem',
+    '4': '1rem',
+    '5': '2rem',
   },
 
 
@@ -418,11 +414,13 @@ module.exports = {
   */
 
   borderRadius: {
-    'none': '0',
-    'sm': '.125rem',
-    default: '.25rem',
-    'lg': '.5rem',
-    'full': '9999px',
+    '0': '0',
+    '1': '.125rem',
+    '2': '.25rem',
+    '3': '.5rem',
+    '4': '1rem',
+    '-100': '100%',
+    '-pill': '9999px',
   },
 
 
@@ -448,33 +446,29 @@ module.exports = {
 
   width: {
     'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
-    '48': '12rem',
-    '64': '16rem',
-    '1/2': '50%',
-    '1/3': '33.33333%',
-    '2/3': '66.66667%',
-    '1/4': '25%',
-    '3/4': '75%',
-    '1/5': '20%',
-    '2/5': '40%',
-    '3/5': '60%',
-    '4/5': '80%',
-    '1/6': '16.66667%',
-    '5/6': '83.33333%',
-    'full': '100%',
-    'screen': '100vw'
+    '-px': '1px',
+    '1': '1rem',
+    '2': '2rem',
+    '3': '4rem',
+    '4': '8rem',
+    '5': '16rem',
+    '-10': '10%',
+    '-20': '20%',
+    '-25': '25%',
+    '-30': '30%',
+    '-33': '33%',
+    '-34': '34%',
+    '-40': '40%',
+    '-50': '50%',
+    '-60': '60%',
+    '-70': '70%',
+    '-75': '75%',
+    '-80': '80%',
+    '-90': '90%',
+    '-100': '100%',
+    '-third': 'calc(100% / 3)',
+    '-two-thirds': 'calc(100% / 1.5)',
+    '-screen': '100vw'
   },
 
 
@@ -495,21 +489,17 @@ module.exports = {
 
   height: {
     'auto': 'auto',
+    'inherit': 'inherit',
     'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
-    '48': '12rem',
-    '64': '16rem',
-    'full': '100%',
+    '1': '1rem',
+    '2': '2rem',
+    '3': '4rem',
+    '4': '8rem',
+    '5': '16rem',
+    '-25': '25%',
+    '-50': '50%',
+    '-75': '75%',
+    '-100': '100%',
     'screen': '100vh'
   },
 
@@ -550,7 +540,7 @@ module.exports = {
 
   minHeight: {
     '0': '0',
-    'full': '100%',
+    '100': '100%',
     'screen': '100vh'
   },
 
@@ -571,16 +561,17 @@ module.exports = {
   */
 
   maxWidth: {
-    'xs': '20rem',
-    'sm': '30rem',
-    'md': '40rem',
-    'lg': '50rem',
-    'xl': '60rem',
-    '2xl': '70rem',
-    '3xl': '80rem',
-    '4xl': '90rem',
-    '5xl': '100rem',
-    'full': '100%',
+    '1': '1rem',
+    '2': '2rem',
+    '3': '4rem',
+    '4': '8rem',
+    '5': '16rem',
+    '6': '32rem',
+    '7': '48rem',
+    '8': '64rem',
+    '9': '96rem',
+    'none': 'none',
+    '-100': '100%'
   },
 
 
@@ -622,12 +613,13 @@ module.exports = {
   padding: {
     'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    '1': '.25rem',
+    '2': '.5rem',
+    '3': '1rem',
+    '4': '2rem',
+    '5': '4rem',
+    '6': '8rem',
+    '7': '16rem',
   },
 
 
@@ -647,15 +639,15 @@ module.exports = {
   */
 
   margin: {
-    'auto': 'auto',
     'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    '1': '.25rem',
+    '2': '.5rem',
+    '3': '1rem',
+    '4': '2rem',
+    '5': '4rem',
+    '6': '8rem',
+    '7': '16rem',
   },
 
 
@@ -703,13 +695,13 @@ module.exports = {
   */
 
   shadows: {
-    default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    '1': '0px 0px 4px 2px rgba( 0, 0, 0, 0.2 )',
+    '2': '0px 0px 8px 2px rgba( 0, 0, 0, 0.2 )',
+    '3': '2px 2px 4px 2px rgba( 0, 0, 0, 0.2 )',
+    '4': '2px 2px 8px 0px rgba( 0, 0, 0, 0.2 )',
+    '5': '4px 4px 8px 0px rgba( 0, 0, 0, 0.2 )',
     'none': 'none',
   },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -750,9 +742,17 @@ module.exports = {
 
   opacity: {
     '0': '0',
-    '25': '.25',
+    '025': '.025',
+    '05': '.05',
+    '10': '.1',
+    '20': '.2',
+    '30': '.3',
+    '40': '.4',
     '50': '.5',
-    '75': '.75',
+    '60': '.6',
+    '70': '.7',
+    '80': '.8',
+    '90': '.9',
     '100': '1',
   },
 
@@ -906,22 +906,22 @@ module.exports = {
       repeatY: 'bg-repeat-y'
     },
     backgroundSize: {
-      contain: 'bg-contain',
-      cover: 'bg-cover',
+      contain: 'contain',
+      cover: 'cover',
     },
     borderColors: {
-      base: 'border',
-      modifierPrefix: '-'
+      base: 'b',
+      modifierPrefix: '--'
     },
     borderStyle: {
-      solid: 'border-solid',
-      dashed: 'border-dashed',
-      dotted: 'border-dotted',
-      none: 'border-none'
+      solid: 'b--solid',
+      dashed: 'b--dashed',
+      dotted: 'b--dotted',
+      none: 'b--none'
     },
     borderWidths: {
-      base: 'border',
-      withSides: 'border-',
+      base: 'bw',
+      withSides: 'bw',
       modifierPrefix: '-',
       sides: {
         top: 't',
@@ -940,13 +940,13 @@ module.exports = {
       notAllowed: 'cursor-not-allowed',
     },
     display: {
-      block: 'block',
-      inlineBlock: 'inline-block',
-      inline: 'inline',
-      table: 'table',
-      tableRow: 'table-row',
-      tableCell: 'table-cell',
-      hidden: 'hidden'
+      block: 'db',
+      inlineBlock: 'dib',
+      inline: 'di',
+      table: 'dt',
+      tableRow: 'dtr',
+      tableCell: 'dtc',
+      hidden: 'dn'
     },
     flex: {
       flex: 'flex',
@@ -988,10 +988,10 @@ module.exports = {
       flexNoShrink: 'flex-no-shrink'
     },
     floats: {
-      floatRight: 'float-right',
-      floatLeft: 'float-left',
-      floatNone: 'float-none',
-      clearfix: 'clearfix'
+      floatRight: 'fr',
+      floatLeft: 'fl',
+      floatNone: 'fn',
+      clearfix: 'cf'
     },
     forms: {
       appearanceNone: 'appearance-none'
@@ -1000,7 +1000,7 @@ module.exports = {
       listReset: 'list-reset'
     },
     opacity: {
-      base: 'opacity',
+      base: 'o',
       modifierPrefix: '-'
     },
     overflow: {
@@ -1046,16 +1046,16 @@ module.exports = {
       base: 'stroke',
       modifierPrefix: '-'
     },
-    rounded: {
-      base: 'rounded',
-      withSides: 'rounded-',
-      modifierPrefix: '-',
-      sidesSeparator: '',
+    borderRadius: {
+      base: 'br',
+      withSides: 'br',
+      modifierPrefix: '',
+      sidesSeparator: '--',
       sides: {
-        top: 't',
-        right: 'r',
-        bottom: 'b',
-        left: 'l'
+        top: 'top',
+        right: 'right',
+        bottom: 'bottom',
+        left: 'left'
       }
     },
     shadow: {
@@ -1064,7 +1064,7 @@ module.exports = {
     },
     height: {
       base: 'h',
-      modifierPrefix: '-'
+      modifierPrefix: ''
     },
     maxHeight: {
       base: 'max-h',
@@ -1076,7 +1076,7 @@ module.exports = {
     },
     width: {
       base: 'w',
-      modifierPrefix: '-'
+      modifierPrefix: ''
     },
     maxWidth: {
       base: 'max-w',
@@ -1088,9 +1088,9 @@ module.exports = {
     },
     margin: {
       base: 'm',
-      modifierPrefix: '-',
-      y: 'y',
-      x: 'x',
+      modifierPrefix: '',
+      y: 'v',
+      x: 'h',
       t: 't',
       r: 'r',
       b: 'b',
@@ -1098,9 +1098,9 @@ module.exports = {
     },
     negativeMargin: {
       base: '-m',
-      modifierPrefix: '-',
-      y: 'y',
-      x: 'x',
+      modifierPrefix: '',
+      y: 'v',
+      x: 'h',
       t: 't',
       r: 'r',
       b: 'b',
@@ -1108,43 +1108,43 @@ module.exports = {
     },
     padding: {
       base: 'p',
-      modifierPrefix: '-',
-      y: 'y',
-      x: 'x',
+      modifierPrefix: '',
+      y: 'v',
+      x: 'h',
       t: 't',
       r: 'r',
       b: 'b',
       l: 'l'
     },
     textAlign: {
-      left: 'text-left',
-      center: 'text-center',
-      right: 'text-right',
-      justify: 'text-justify'
+      left: 'tl',
+      center: 'tc',
+      right: 'tr',
+      justify: 'tj'
     },
     textColors: {
-      base: 'text',
-      modifierPrefix: '-'
+      base: '',
+      modifierPrefix: ''
     },
     fonts: {
       base: 'font',
       modifierPrefix: '-'
     },
     leading: {
-      base: 'leading',
+      base: 'lh',
       modifierPrefix: '-'
     },
     textSizes: {
-      base: 'text',
-      modifierPrefix: '-'
+      base: 'f',
+      modifierPrefix: ''
     },
     textStyle: {
-      italic: 'italic',
+      italic: 'i',
       roman: 'roman',
-      uppercase: 'uppercase',
-      lowercase: 'lowercase',
-      capitalize: 'capitalize',
-      normalCase: 'normal-case',
+      uppercase: 'ttu',
+      lowercase: 'ttl',
+      capitalize: 'ttc',
+      normalCase: 'ttn',
       underline: 'underline',
       lineThrough: 'line-through',
       noUnderline: 'no-underline',
@@ -1156,8 +1156,10 @@ module.exports = {
       modifierPrefix: '-'
     },
     fontWeights: {
-      base: 'font',
-      modifierPrefix: '-'
+      base: 'fw',
+      modifierPrefix: '',
+      normal: 'normal',
+      bold: 'b'
     },
     textWrap: {
       whitespaceNormal: 'whitespace-normal',

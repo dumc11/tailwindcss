@@ -18,7 +18,8 @@
   "scripts": {
     "prebabelify": "rimraf lib",
     "babelify": "babel src --out-dir lib",
-    "prepare": "npm run babelify && babel-node src/build.js",
+    "prepare": "npm run babelify && LIBRARY=tailwind babel-node src/build.js",
+    "prepare:tachyons": "npm run babelify && LIBRARY=tachyons babel-node src/build.js",
     "watch": "nodemon -e js,css --watch src --exec 'babel-node src/build.js'",
     "style": "eslint .",
     "style:fix": "eslint --fix .",
@@ -44,6 +45,7 @@
   },
   "dependencies": {
     "commander": "^2.11.0",
+    "extract-from-css": "^0.4.4",
     "fs-extra": "^4.0.2",
     "lodash": "^4.17.4",
     "mousetrap": "^1.6.1",

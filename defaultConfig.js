@@ -1,3 +1,3 @@
-module.exports = function() {
-  return require('lodash').cloneDeep(require('./defaultConfig.stub.js'))
+module.exports = function(library) {
+  return require('lodash').cloneDeep(require(`${__dirname}/config.${library}.js`))
 }
