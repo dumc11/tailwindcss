@@ -56,6 +56,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'lists',
     'appearance',
     'aspectRatios',
+    'rotate',
     'backgroundAttachment',
     'backgroundColors',
     'backgroundPosition',

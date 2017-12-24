@@ -343,6 +343,25 @@ module.exports = {
 
   backgroundColors: colors,
 
+  /*
+  |-----------------------------------------------------------------------------
+  | Rotate
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your element rotation.
+  | Class name: .rotate{-value}
+  |
+  */
+
+  rotate: {
+    '45': '45deg',
+    '90': '90deg',
+    '135': '135deg',
+    '180': '180deg',
+    '225': '225deg',
+    '270': '270deg',
+    '315': '315deg',
+  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -877,6 +896,7 @@ module.exports = {
     width: ['responsive'],
     zIndex: ['responsive'],
     aspectRatios: ['responsive'],
+    rotate: ['responsive'],
   },
 
 
@@ -1072,6 +1092,10 @@ module.exports = {
       pinX: 'pin-x',
       pinY: 'pin-y'
     },
+    rotate: {
+      base: 'rotate',
+      modifierPrefix: '-'
+    },
     resize: {
       resize: 'resize',
       resizeNone: 'resize-none',
@@ -1124,7 +1148,7 @@ module.exports = {
       modifierPrefix: ''
     },
     maxWidth: {
-      base: 'max-w',
+      base: 'mw',
       modifierPrefix: '-'
     },
     minWidth: {

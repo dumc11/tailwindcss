@@ -28,7 +28,7 @@ export default function(config) {
         responsiveRules.map(rule => {
           const cloned = rule.clone()
           cloned.selectors = _.map(rule.selectors, selector =>
-            buildClassVariant(selector, screen, separator)
+            buildClassVariant(selector, screen, separator, true)
           )
           return cloned
         })

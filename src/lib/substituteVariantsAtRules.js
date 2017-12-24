@@ -7,7 +7,11 @@ const variantGenerators = {
     const cloned = container.clone()
 
     cloned.walkRules(rule => {
-      rule.selector = `${buildClassVariant(rule.selector, 'hover', config.options.separator)}:hover`
+      if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
+        rule.selector = `${buildClassVariant(rule.selector, 'hover', config.options.separator)}:hover`
+      } else if (process.env.LIBRARY === 'tachyons') {
+        rule.selector = `${buildClassVariant(rule.selector, 'hover', config.options.separator)}:hover`
+      }
     })
 
     container.before(cloned.nodes)
@@ -16,7 +20,11 @@ const variantGenerators = {
     const cloned = container.clone()
 
     cloned.walkRules(rule => {
-      rule.selector = `${buildClassVariant(rule.selector, 'focus', config.options.separator)}:focus`
+      if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
+        rule.selector = `${buildClassVariant(rule.selector, 'focus', config.options.separator)}:focus`
+      } else {
+        rule.selector = `${buildClassVariant(rule.selector, 'focus', config.options.separator)}:focus`
+      }
     })
 
     container.before(cloned.nodes)
