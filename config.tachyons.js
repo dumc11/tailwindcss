@@ -239,8 +239,8 @@ module.exports = {
     '3': '1.5rem',
     '2': '2.25rem',
     '1': '3rem',
-    'subheading': '5rem',
-    'heading': '6rem',
+    '-subheadline': '5rem',
+    '-headline': '6rem',
     '-5': '5rem',
     '-6': '6rem'
   },
@@ -437,7 +437,7 @@ module.exports = {
   */
 
   width: {
-    'auto': 'auto',
+    '-auto': 'auto',
     '-px': '1px',
     '1': '1rem',
     '2': '2rem',
@@ -480,9 +480,9 @@ module.exports = {
   */
 
   height: {
-    'auto': 'auto',
-    'inherit': 'inherit',
-    'px': '1px',
+    '-auto': 'auto',
+    '-inherit': 'inherit',
+    '-px': '1px',
     '1': '1rem',
     '2': '2rem',
     '3': '4rem',
@@ -492,7 +492,7 @@ module.exports = {
     '-50': '50%',
     '-75': '75%',
     '-100': '100%',
-    'screen': '100vh'
+    '-screen': '100vh'
   },
 
 
@@ -631,7 +631,7 @@ module.exports = {
   */
 
   margin: {
-    'px': '1px',
+    '-px': '1px',
     '0': '0',
     '1': '.25rem',
     '2': '.5rem',
@@ -640,6 +640,7 @@ module.exports = {
     '5': '4rem',
     '6': '8rem',
     '7': '16rem',
+    '-auto': 'auto',
   },
 
 
@@ -663,10 +664,11 @@ module.exports = {
     '0': '0',
     '1': '0.25rem',
     '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.5rem',
-    '6': '2rem',
+    '3': '1rem',
+    '4': '-2rem',
+    '5': '-4rem',
+    '6': '-8rem',
+    '7': '-16rem',
   },
 
 
@@ -749,6 +751,32 @@ module.exports = {
   },
 
 
+  /*
+  |-----------------------------------------------------------------------------
+  | Aspect Ratio
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your aspect ratio utility values. By default we
+  | provide a sensible numeric scale. You can, of course, modify these
+  | values as needed.
+  |
+  | Class name: .aspect-ratio-{name}
+  |
+  */
+
+  aspectRatios: {
+    '16x9': '56.25%',
+    '9x16': '177.77%',
+    '4x3': '75%',
+    '3x4': '133.33%',
+    '6x4': '66.6%',
+    '4x6': '150%',
+    '8x5': '62.5%',
+    '5x8': '160%',
+    '7x5': '71.42%',
+    '5x7': '140%',
+    '1x1': '100%'
+  },
   /*
   |-----------------------------------------------------------------------------
   | SVG fill                                   https://tailwindcss.com/docs/svg
@@ -848,6 +876,7 @@ module.exports = {
     whitespace: ['responsive'],
     width: ['responsive'],
     zIndex: ['responsive'],
+    aspectRatios: ['responsive'],
   },
 
 
@@ -1056,6 +1085,11 @@ module.exports = {
     svgStroke: {
       base: 'stroke',
       modifierPrefix: '-'
+    },
+    aspectRatios: {
+      base: 'aspect-ratio',
+      modifierPrefix: '--',
+      object: 'aspect-ratio--object'
     },
     borderRadius: {
       base: 'br',

@@ -55,6 +55,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
   required = [
     'lists',
     'appearance',
+    'aspectRatios',
     'backgroundAttachment',
     'backgroundColors',
     'backgroundPosition',
