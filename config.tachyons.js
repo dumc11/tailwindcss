@@ -983,7 +983,17 @@ module.exports = {
       flexGrow: 'flex-grow',
       flexShrink: 'flex-shrink',
       flexNoGrow: 'flex-no-grow',
-      flexNoShrink: 'flex-no-shrink'
+      flexNoShrink: 'flex-no-shrink',
+      order0: 'order-0',
+      order1: 'order-1',
+      order2: 'order-2',
+      order3: 'order-3',
+      order4: 'order-4',
+      order5: 'order-5',
+      order6: 'order-6',
+      order7: 'order-7',
+      order8: 'order-8',
+      orderLast: 'orderLast',
     },
     floats: {
       floatRight: 'fr',
