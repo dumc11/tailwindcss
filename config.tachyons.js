@@ -582,7 +582,7 @@ module.exports = {
     '8': '64rem',
     '9': '96rem',
     'none': 'none',
-    '-100': '100%'
+    '100': '100%'
   },
 
 
@@ -1032,10 +1032,10 @@ module.exports = {
       flexAuto: 'flex-auto',
       flexInitial: 'flex-initial',
       flexNone: 'flex-none',
-      flexGrow: 'flex-grow',
-      flexShrink: 'flex-shrink',
-      flexNoGrow: 'flex-no-grow',
-      flexNoShrink: 'flex-no-shrink',
+      flexGrow: 'flex-grow-1',
+      flexShrink: 'flex-shrink-1',
+      flexNoGrow: 'flex-grow-0',
+      flexNoShrink: 'flex-shrink-0',
       order0: 'order-0',
       order1: 'order-1',
       order2: 'order-2',
@@ -1149,7 +1149,7 @@ module.exports = {
     },
     maxWidth: {
       base: 'mw',
-      modifierPrefix: '-'
+      modifierPrefix: ''
     },
     minWidth: {
       base: 'min-w',
