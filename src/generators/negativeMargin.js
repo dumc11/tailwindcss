@@ -5,7 +5,7 @@ function defineNegativeMargin(negativeMargin, ns) {
   const generators = [
     (size, modifier) =>
       defineClasses({
-        [`${ns.base}${ns.modifierPrefix}${modifier}`]: { margin: `${size}` },
+        [`${ns.base}${ns.allModifierPrefix}${modifier}`]: { margin: `${size}` },
       }),
     (size, modifier) =>
       defineClasses({

@@ -5,7 +5,7 @@ function definePadding(padding, ns) {
   const generators = [
     (size, modifier) =>
       defineClasses({
-        [`${ns.base}${ns.modifierPrefix}${modifier}`]: { padding: `${size}` },
+        [`${ns.base}${ns.allModifierPrefix}${modifier}`]: { padding: `${size}` },
       }),
     (size, modifier) =>
       defineClasses({

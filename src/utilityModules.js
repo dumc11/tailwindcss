@@ -93,6 +93,12 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'textSizes',
     'textStyle',
     'tracking',
+    'userSelect',
+    'verticalAlign',
+    'visibility',
+    'whitespace',
+    'width',
+    'zIndex',
   ]
 }
 

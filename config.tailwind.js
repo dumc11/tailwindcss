@@ -1089,6 +1089,7 @@ module.exports = {
     margin: {
       base: 'm',
       modifierPrefix: '-',
+      allModifierPrefix: '-',
       y: 'y',
       x: 'x',
       t: 't',
@@ -1099,6 +1100,7 @@ module.exports = {
     negativeMargin: {
       base: '-m',
       modifierPrefix: '-',
+      allModifierPrefix: '-',
       y: 'y',
       x: 'x',
       t: 't',
@@ -1109,6 +1111,7 @@ module.exports = {
     padding: {
       base: 'p',
       modifierPrefix: '-',
+      allModifierPrefix: '-',
       y: 'y',
       x: 'x',
       t: 't',
