@@ -131,8 +131,6 @@ let colors = {
 
 module.exports = {
 
-  library: 'tailwind',
-
   /*
   |-----------------------------------------------------------------------------
   | Colors                                  https://tailwindcss.com/docs/colors
@@ -1159,7 +1157,7 @@ module.exports = {
     },
     fontWeights: {
       base: 'font',
-      modifierPrefix: '-',
+      modifierPrefix: '-'
     },
     textWrap: {
       whitespaceNormal: 'whitespace-normal',

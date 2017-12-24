@@ -1,5 +1,5 @@
 import config from '../defaultConfig.js'
 
 test('the default config matches the stub', () => {
-  expect(config()).toEqual(require('../defaultConfig.stub.js'))
+  expect(config()).toEqual(require('../config.tailwind.js'))
 })

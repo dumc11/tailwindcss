@@ -1,5 +1,7 @@
+const fs = require('fs')
+const path = require('path')
 
-const generators = [
+let required = [
   'lists',
   'appearance',
   'backgroundAttachment',
@@ -44,21 +46,16 @@ const generators = [
   'visibility',
   'whitespace',
   'width',
-  'zIndex'
+  'zIndex',
 ]
 
-const fs = require('fs')
-const path = require('path')
-const base = `${__dirname}/generators`
-
-let result =  generators.map(x => {
-  let genLibPath = path.resolve(`${base}/${x}.${process.env.LIBRARY}.js`)
-  let genPath = path.resolve(`${base}/${x}.js`)
+export default required.map(x => {
+  let gen = path.resolve(`${__dirname}/generators/${x}.js`)
+  let libGen = path.resolve(`${__dirname}/generators/${x}.${process.env.LIBRARY}.js`)
+  let generator = fs.existsSync(libGen) ? require(libGen) : require(gen)
 
   return {
     name: x,
-    generator: fs.existsSync(genLibPath) ? require(genLibPath).default : require(genPath).default
+    generator: generator.default ? generator.default : generator,
   }
 })
-
-export default result

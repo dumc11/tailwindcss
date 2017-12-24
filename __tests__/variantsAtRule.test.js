@@ -1,6 +1,6 @@
 import postcss from 'postcss'
 import plugin from '../src/lib/substituteVariantsAtRules'
-import config from '../defaultConfig.stub.js'
+import config from '../config.tailwind.js'
 
 function run(input, opts = () => config) {
   return postcss([plugin(opts)]).process(input)
