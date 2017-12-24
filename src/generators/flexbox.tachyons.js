@@ -114,34 +114,34 @@ export default function({ naming: { flex: ns } }) {
       'flex-shrink': '0',
     },
     [ns.order0]: {
-      'order': '0',
+      order: '0',
     },
     [ns.order1]: {
-      'order': '1',
+      order: '1',
     },
     [ns.order2]: {
-      'order': '2',
+      order: '2',
     },
     [ns.order3]: {
-      'order': '3',
+      order: '3',
     },
     [ns.order4]: {
-      'order': '4',
+      order: '4',
     },
     [ns.order5]: {
-      'order': '5',
+      order: '5',
     },
     [ns.order6]: {
-      'order': '6',
+      order: '6',
     },
     [ns.order7]: {
-      'order': '7',
+      order: '7',
     },
     [ns.order8]: {
-      'order': '8',
+      order: '8',
     },
     [ns.orderLast]: {
-      'order': '99999',
+      order: '99999',
     },
   })
 }
