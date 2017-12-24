@@ -403,6 +403,7 @@ module.exports = {
   */
 
   borderRadius: {
+    default: '.125rem',
     '0': '0',
     '1': '.125rem',
     '2': '.25rem',
@@ -1057,7 +1058,7 @@ module.exports = {
     borderRadius: {
       base: 'br',
       withSides: 'br',
-      modifierPrefix: '',
+      modifierPrefix: '-',
       sidesSeparator: '--',
       sides: {
         top: 'top',

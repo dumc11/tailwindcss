@@ -19,6 +19,6 @@ let diff = c1.reduce((acc, x) => {
   return acc
 }, [])
 
-console.log(diff.length)
 // console.log(_.take(diff, 50))
-//console.log(JSON.stringify(diff, null, ' '))
+console.log(JSON.stringify(diff, null, ' '))
+console.log(diff.length)

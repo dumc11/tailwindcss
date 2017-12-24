@@ -11,16 +11,16 @@ function defineBorderWidthUtilities(borderWidths, ns) {
       }),
     (width, modifier) =>
       defineClasses({
-        [`${ns.withSides}${modifier}${ns.sides.top}`]: {
+        [`${ns.withSides}${ns.sides.top}${ns.modifierPrefix}${modifier}`]: {
           'border-top-width': `${width}`,
         },
-        [`${ns.withSides}${modifier}${ns.sides.right}`]: {
+        [`${ns.withSides}${ns.sides.right}${ns.modifierPrefix}${modifier}`]: {
           'border-right-width': `${width}`,
         },
-        [`${ns.withSides}${modifier}${ns.sides.bottom}`]: {
+        [`${ns.withSides}${ns.sides.bottom}${ns.modifierPrefix}${modifier}`]: {
           'border-bottom-width': `${width}`,
         },
-        [`${ns.withSides}${modifier}${ns.sides.left}`]: {
+        [`${ns.withSides}${ns.sides.left}${ns.modifierPrefix}${modifier}`]: {
           'border-left-width': `${width}`,
         },
       }),
@@ -28,7 +28,7 @@ function defineBorderWidthUtilities(borderWidths, ns) {
 
   return _.flatMap(generators, generator => {
     return _.flatMap(borderWidths, (width, modifier) => {
-      return generator(width, modifier === 'default' ? '' : `${modifier}${ns.modifierPrefix}`)
+      return generator(width, modifier === 'default' ? '' : `${modifier}`)
     })
   })
 }
