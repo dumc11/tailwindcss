@@ -241,6 +241,8 @@ module.exports = {
     '1': '3rem',
     'subheading': '5rem',
     'heading': '6rem',
+    '-5': '5rem',
+    '-6': '6rem'
   },
 
   /*
