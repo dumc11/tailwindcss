@@ -20,6 +20,4 @@ let diff = c1.reduce((acc, x) => {
 }, [])
 
 console.log(diff.length)
-diff.splice(0, 1000)
-// console.log(_.take(diff, 20))
-console.log(diff)
+console.log(_.take(diff, 20))

@@ -162,9 +162,9 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
+    'ns': '576px',
+    'm': '768px',
+    'l': '992px',
     'xl': '1200px',
   },
 
@@ -816,6 +816,7 @@ module.exports = {
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
+    borders: ['responsive'],
     borderColors: ['responsive', 'hover'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
@@ -871,7 +872,7 @@ module.exports = {
   options: {
     prefix: '',
     important: false,
-    separator: ':',
+    separator: '-',
   },
 
   naming: {
@@ -908,6 +909,14 @@ module.exports = {
     backgroundSize: {
       contain: 'contain',
       cover: 'cover',
+    },
+    borders: {
+      all: 'ba',
+      top: 'bt',
+      right: 'br',
+      bottom: 'bb',
+      left: 'bl',
+      none: 'bn'
     },
     borderColors: {
       base: 'b',
@@ -1097,7 +1106,7 @@ module.exports = {
       l: 'l'
     },
     negativeMargin: {
-      base: '-m',
+      base: 'n',
       modifierPrefix: '',
       y: 'v',
       x: 'h',
