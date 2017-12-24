@@ -897,6 +897,7 @@ module.exports = {
     zIndex: ['responsive'],
     aspectRatios: ['responsive'],
     rotate: ['responsive'],
+    boxSizing: [],
   },
 
 
@@ -1126,6 +1127,10 @@ module.exports = {
         bottom: 'bottom',
         left: 'left'
       }
+    },
+    boxSizing: {
+      borderBox: 'border-box',
+      contentBox: 'content-box'
     },
     shadow: {
       base: 'shadow',
