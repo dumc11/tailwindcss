@@ -662,6 +662,25 @@ module.exports = {
     '-auto': 'auto',
   },
 
+  /*
+  |-----------------------------------------------------------------------------
+  | Position
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your positioning utility sizes. These can be
+  | percentage based, pixels, rems, or any other units.
+  |
+  | Class name: .{position?}-{size}
+  |
+  */
+
+  position: {
+    '0': '0',
+    '1': '1rem',
+    '2': '2rem',
+    '-1': '-1rem',
+    '-2': '-2rem',
+  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -1084,14 +1103,15 @@ module.exports = {
       fixed: 'fixed',
       absolute: 'absolute',
       relative: 'relative',
-      pin: 'pin',
+      pin: 'absolute--fill',
       pinNone: 'pin-none',
-      pinT: 'pin-t',
-      pinR: 'pin-r',
-      pinB: 'pin-b',
-      pinL: 'pin-l',
+      pinT: 'top',
+      pinR: 'right',
+      pinB: 'bottom',
+      pinL: 'left',
       pinX: 'pin-x',
-      pinY: 'pin-y'
+      pinY: 'pin-y',
+      modifierPrefix: '-'
     },
     rotate: {
       base: 'rotate',
