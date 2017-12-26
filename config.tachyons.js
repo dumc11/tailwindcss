@@ -991,7 +991,7 @@ module.exports = {
     },
     borderWidths: {
       base: 'bw',
-      withSides: 'bw',
+      withSides: 'b',
       modifierPrefix: '-',
       sides: {
         top: 't',
