@@ -1014,8 +1014,11 @@ module.exports = {
       inlineBlock: 'dib',
       inline: 'di',
       table: 'dt',
-      tableRow: 'dtr',
       tableCell: 'dtc',
+      tableRow: 'dt-row',
+      tableRowGroup: 'dt-row-group',
+      tableColumn: 'dt-column',
+      tableColumnGroup: 'dt-column-group',
       hidden: 'dn'
     },
     flex: {
@@ -1105,13 +1108,15 @@ module.exports = {
       relative: 'relative',
       pin: 'absolute--fill',
       pinNone: 'pin-none',
-      pinT: 'top',
-      pinR: 'right',
-      pinB: 'bottom',
-      pinL: 'left',
+      modifierPrefix: '-',
+      sides: {
+        top: 'top',
+        bottom: 'bottom',
+        left: 'left',
+        right: 'right'
+      },
       pinX: 'pin-x',
       pinY: 'pin-y',
-      modifierPrefix: '-'
     },
     rotate: {
       base: 'rotate',

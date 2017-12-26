@@ -19,18 +19,20 @@ export default function({ position, naming: { position: ns } }) {
       right: 0,
       bottom: 0,
       left: 0,
-    }
+    },
+    [ns.pinY]: { top: 0, bottom: 0 },
+    [ns.pinX]: { right: 0, left: 0 },
   })
 
-  let sides = [ns.pinT, ns.pinR, ns.pinB, ns.pinL]
-
-  classes = classes.concat(_.flatMap(position, (value, key) => {
-    return _.map(sides, (side) => {
-      return defineClass(`${side}${ns.modifierPrefix}${key}`, {
-        [side]: value
+  classes = classes.concat(
+    _.flatMap(position, (value, key) => {
+      return _.map(ns.sides, side => {
+        return defineClass(`${side}${ns.modifierPrefix}${key}`, {
+          [side]: value,
+        })
       })
     })
-  }))
+  )
 
   return classes
 }
