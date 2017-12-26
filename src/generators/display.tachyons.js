@@ -11,6 +11,9 @@ export default function({ naming: { display: ns } }) {
     [ns.inline]: {
       display: 'inline',
     },
+    [ns.inlineTable]: {
+      display: 'inline-table',
+    },
     [ns.table]: {
       display: 'table',
     },

@@ -1,6 +1,4 @@
-import _ from 'lodash'
 import postcss from 'postcss'
-import defineClasses from '../util/defineClasses'
 
 export default function({ cms, naming: { cms: ns } }) {
   return postcss.parse(`

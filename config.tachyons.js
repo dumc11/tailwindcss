@@ -324,9 +324,27 @@ module.exports = {
   | Class name: .text-{color}
   |
   */
-
   textColors: colors,
 
+  /*
+  |-----------------------------------------------------------------------------
+  | Typography               https://github.com/tachyons-css/tachyons-typography
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your text colors. By default these use the
+  | color palette we defined above, however you're welcome to set these
+  | independently if that makes sense for your project.
+  |
+  | Class name: .text-{color}
+  |
+  */
+
+  typography: {
+    measure: '30em',
+    measureWide: '34em',
+    measureNarrow: '20em',
+    indent: '1em',
+  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -554,24 +572,6 @@ module.exports = {
   minHeight: {
     '0': '0',
     '100': '100%'
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Minimum screen height
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your minimum height utility sizes. These can
-  | be percentage based, pixels, rems, or any other units. We provide a
-  | few common use-cases by default. You can, of course, modify these
-  | values as needed.
-  |
-  | Class name: .min-vh-{size}
-  |
-  */
-
-  minScreenHeight: {
-    '100': '100vh'
   },
 
   /*
@@ -933,7 +933,6 @@ module.exports = {
     maxHeight: ['responsive'],
     maxWidth: ['responsive'],
     minHeight: ['responsive'],
-    minScreenHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
     opacity: ['responsive'],
@@ -961,6 +960,7 @@ module.exports = {
     boxSizing: [],
     outline: ['responsive'],
     cms: [],
+    typography: ['responsive'],
   },
 
 
@@ -1057,6 +1057,7 @@ module.exports = {
       block: 'db',
       inlineBlock: 'dib',
       inline: 'di',
+      inlineTable: 'dit',
       table: 'dt',
       tableCell: 'dtc',
       tableRow: 'dt-row',
@@ -1230,14 +1231,6 @@ module.exports = {
       modifierPrefix: '',
       screen: 'vh'
     },
-    screenHeight: {
-      base: 'vh',
-      modifierPrefix: '-',
-    },
-    minScreenHeight: {
-      base: 'min-vh',
-      modifierPrefix: '-',
-    },
     maxHeight: {
       base: 'max-h',
       modifierPrefix: '-'
@@ -1370,7 +1363,16 @@ module.exports = {
       base: 'outline',
       transparent: 'outline-transparent',
       zero: 'outline-0'
-    }
+    },
+    typography: {
+      measure: 'measure',
+      measureWide: 'measure-wide',
+      measureNarrow: 'measure-narrow',
+      indent: 'indent',
+      smallCaps: 'small-caps',
+      truncate: 'truncate',
+    },
+
   }
 
 }

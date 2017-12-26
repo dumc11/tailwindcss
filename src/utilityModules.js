@@ -104,6 +104,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'zIndex',
     'outline',
     'cms',
+    'typography',
   ]
 }
 
