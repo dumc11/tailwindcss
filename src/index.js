@@ -24,22 +24,11 @@ const plugin = postcss.plugin('tailwind', config => {
 
   const lazyConfig = () => {
     if (_.isUndefined(config)) {
-      process.env.TAILWIND_FLAVOUR = 'tailwind'
-      return require('../defaultConfig')(process.env.TAILWIND_FLAVOUR)
+      return require('../defaultConfig')()
     }
 
     delete require.cache[require.resolve(path.resolve(config))]
-    let confFile = require(path.resolve(config))
-    if (confFile.tailwindFlavour) {
-      process.env.TAILWIND_FLAVOUR = confFile.tailwindFlavour
-    } else {
-      process.env.TAILWIND_FLAVOUR = 'tailwind'
-    }
-
-    return mergeConfigWithDefaults(
-      confFile,
-      require('../defaultConfig')(process.env.TAILWIND_FLAVOUR)
-    )
+    return mergeConfigWithDefaults(require(path.resolve(config)), require('../defaultConfig')())
   }
 
   return postcss(
