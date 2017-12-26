@@ -571,7 +571,8 @@ module.exports = {
 
   minHeight: {
     '0': '0',
-    '100': '100%'
+    '100': '100%',
+    'vh100': '100vh'
   },
 
   /*
@@ -1238,7 +1239,8 @@ module.exports = {
     },
     minHeight: {
       base: 'min-h',
-      modifierPrefix: '-'
+      modifierPrefix: '-',
+      screen: 'min-vh',
     },
     width: {
       base: 'w',
