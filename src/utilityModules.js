@@ -3,7 +3,7 @@ const path = require('path')
 
 let required
 
-if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
+if (!process.env.TAILWIND_FLAVOUR || process.env.TAILWIND_FLAVOUR === 'tailwind') {
   required = [
     'lists',
     'appearance',
@@ -51,7 +51,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'width',
     'zIndex',
   ]
-} else if (process.env.LIBRARY === 'tachyons') {
+} else if (process.env.TAILWIND_FLAVOUR === 'tachyons') {
   required = [
     'lists',
     'appearance',
@@ -114,7 +114,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
 
 export default required.map(x => {
   let gen = path.resolve(`${__dirname}/generators/${x}.js`)
-  let libGen = path.resolve(`${__dirname}/generators/${x}.${process.env.LIBRARY}.js`)
+  let libGen = path.resolve(`${__dirname}/generators/${x}.${process.env.TAILWIND_FLAVOUR}.js`)
   let generator = fs.existsSync(libGen) ? require(libGen) : require(gen)
 
   return {

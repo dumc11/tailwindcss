@@ -24,7 +24,7 @@ const plugin = postcss.plugin('tailwind', config => {
 
   const lazyConfig = () => {
     if (_.isUndefined(config)) {
-      return require('../defaultConfig')(process.env.LIBRARY)
+      return require('../defaultConfig')(process.env.TAILWIND_FLAVOUR)
     }
 
     delete require.cache[require.resolve(path.resolve(config))]

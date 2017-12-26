@@ -53,7 +53,7 @@ program
     }
 
     const output = fs.readFileSync(
-      path.resolve(__dirname, `../config.${process.env.LIBRARY}.js`),
+      path.resolve(__dirname, `../config.${process.env.TAILWIND_FLAVOUR}.js`),
       'utf8'
     )
     fs.outputFileSync(destination, output.replace('// let defaultConfig', 'let defaultConfig'))

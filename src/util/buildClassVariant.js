@@ -2,9 +2,9 @@ import escapeClassName from './escapeClassName'
 
 export default function buildClassVariant(className, variantName, separator, last) {
   let result
-  if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
+  if (!process.env.TAILWIND_FLAVOUR || process.env.TAILWIND_FLAVOUR === 'tailwind') {
     result = `.${variantName}${escapeClassName(separator)}${className.slice(1)}`
-  } else if (process.env.LIBRARY === 'tachyons') {
+  } else if (process.env.TAILWIND_FLAVOUR === 'tachyons') {
     if (!last) {
       result = `.${variantName}${escapeClassName(separator)}${className.slice(1)}`
     } else {
