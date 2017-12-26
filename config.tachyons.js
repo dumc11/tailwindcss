@@ -1303,7 +1303,8 @@ module.exports = {
       t: 't',
       r: 'r',
       b: 'b',
-      l: 'l'
+      l: 'l',
+      center: 'center'
     },
     negativeMargin: {
       base: 'n',
@@ -1357,7 +1358,7 @@ module.exports = {
       capitalize: 'ttc',
       normalCase: 'ttn',
       underline: 'underline',
-      lineThrough: 'line-through',
+      lineThrough: 'strike',
       noUnderline: 'no-underline',
       antialiased: 'antialiased',
       subpixelAntialiased: 'subpixel-antialiased'
@@ -1403,6 +1404,7 @@ module.exports = {
     visibility: {
       visible: 'visible',
       invisible: 'invisible',
+      clip: 'clip'
     },
     zIndex: {
       base: 'z',
