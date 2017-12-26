@@ -59,6 +59,9 @@ export default function({ naming: { flex: ns } }) {
     [ns.selfStretch]: {
       'align-self': 'stretch',
     },
+    [ns.selfBaseline]: {
+      'align-self': 'baseline',
+    },
     [ns.justifyStart]: {
       'justify-content': 'flex-start',
     },
@@ -88,6 +91,9 @@ export default function({ naming: { flex: ns } }) {
     },
     [ns.contentAround]: {
       'align-content': 'space-around',
+    },
+    [ns.contentStretch]: {
+      'align-content': 'stretch',
     },
     [ns.flex1]: {
       flex: '1',
