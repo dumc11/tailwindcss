@@ -774,6 +774,12 @@ module.exports = {
     '3': 3,
     '4': 4,
     '5': 5,
+    '999': 999,
+    '9999': 9999,
+    'max': 2147483647,
+    'inherit': 'inherit',
+    'initial': 'initial',
+    'unset': 'unset',
   },
 
 
