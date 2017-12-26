@@ -1297,7 +1297,7 @@ module.exports = {
       subpixelAntialiased: 'subpixel-antialiased'
     },
     textTracking: {
-      base: 'tracking',
+      base: 'tracked',
       modifierPrefix: '-'
     },
     fontWeights: {
