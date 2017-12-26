@@ -511,9 +511,11 @@ module.exports = {
     '-50': '50%',
     '-75': '75%',
     '-100': '100%',
-    '-screen': '100vh'
+    'vh-25': '25vh',
+    'vh-50': '50vh',
+    'vh-75': '75vh',
+    'vh-100': '100vh',
   },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -551,10 +553,26 @@ module.exports = {
 
   minHeight: {
     '0': '0',
-    '100': '100%',
-    'screen': '100vh'
+    '100': '100%'
   },
 
+  /*
+  |-----------------------------------------------------------------------------
+  | Minimum screen height
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your minimum height utility sizes. These can
+  | be percentage based, pixels, rems, or any other units. We provide a
+  | few common use-cases by default. You can, of course, modify these
+  | values as needed.
+  |
+  | Class name: .min-vh-{size}
+  |
+  */
+
+  minScreenHeight: {
+    '100': '100vh'
+  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -892,6 +910,7 @@ module.exports = {
     maxHeight: ['responsive'],
     maxWidth: ['responsive'],
     minHeight: ['responsive'],
+    minScreenHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
     opacity: ['responsive'],
@@ -1167,7 +1186,16 @@ module.exports = {
     },
     height: {
       base: 'h',
-      modifierPrefix: ''
+      modifierPrefix: '',
+      screen: 'vh'
+    },
+    screenHeight: {
+      base: 'vh',
+      modifierPrefix: '-',
+    },
+    minScreenHeight: {
+      base: 'min-vh',
+      modifierPrefix: '-',
     },
     maxHeight: {
       base: 'max-h',
