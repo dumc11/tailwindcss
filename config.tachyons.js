@@ -151,10 +151,9 @@ module.exports = {
   */
 
   screens: {
-    'ns': '576px',
-    'm': '768px',
-    'l': '992px',
-    'xl': '1200px',
+    'ns': '48em',
+    'm': {'min': '48em', 'max': '64em'},
+    'l': '64em',
   },
 
 
@@ -177,41 +176,81 @@ module.exports = {
   */
 
   fonts: {
-    'sans': [
+    'sans-serif': [
       '-apple-system',
       'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
+      'avenir next',
+      'avenir',
+      'helvetica',
+      'helvetica neue',
+      'ubuntu',
+      'roboto',
+      'noto',
+      'segoe ui',
+      'arial',
       'sans-serif',
     ],
     'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
+      'georgia',
+      'times',
       'serif',
     ],
-    'mono': [
-      'Menlo',
-      'Monaco',
+    'system-sans-serif': [
+      'sans-serif',
+    ],
+    'system-serif': [
+      'serif',
+    ],
+    'code': [
       'Consolas',
-      'Liberation Mono',
-      'Courier New',
+      'monaco',
+      'monospace'
+    ],
+    'courier': [
+      'Courier Next',
+      'courier',
       'monospace',
-    ]
+    ],
+    'helvetica': [
+      'helvetica neue',
+      'helvetica',
+      'sans-serif'
+    ],
+    'avenir': [
+      'avenir next',
+      'avenir',
+      'sans-serif',
+    ],
+    'athelas': [
+      'athelas',
+      'georgia',
+      'serif',
+    ],
+    'georgia': [
+      'georgia',
+      'serif'
+    ],
+    'times': [
+      'times',
+      'serif',
+    ],
+    'bodoni': [
+      'Bodoni MT',
+      'serif'
+    ],
+    'calisto': [
+      'Calisto MT',
+      'serif'
+    ],
+    'garamond': [
+      'garamond',
+      'serif',
+    ],
+    'baskerville': [
+      'baskerville',
+      'serif',
+    ],
   },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -1299,8 +1338,8 @@ module.exports = {
       modifierPrefix: ''
     },
     fonts: {
-      base: 'font',
-      modifierPrefix: '-'
+      base: '',
+      modifierPrefix: ''
     },
     leading: {
       base: 'lh',
