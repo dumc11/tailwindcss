@@ -14,6 +14,7 @@ export default function({ naming: { overflow: ns } }) {
     [`${ns.base}${ns.scroll}`]: { overflow: 'scroll' },
     [`${ns.base}${ns.xScroll}`]: { 'overflow-x': 'scroll' },
     [`${ns.base}${ns.yScroll}`]: { 'overflow-y': 'scroll' },
+    [`${ns.base}${ns.container}`]: { 'overflow-y': 'scroll' },
     [`${ns.scrollingTouch}`]: { '-webkit-overflow-scrolling': 'touch' },
     [`${ns.scrollingAuto}`]: { '-webkit-overflow-scrolling': 'auto' },
   })

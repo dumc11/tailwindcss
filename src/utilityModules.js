@@ -105,7 +105,10 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'outline',
     'cms',
     'typography',
-    'debug'
+    'debug',
+    'interactive',
+    'reset',
+    'stripes'
   ]
 }
 

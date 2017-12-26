@@ -39,5 +39,9 @@ export default function({ naming: { display: ns } }) {
       'table-layout': 'fixed',
       width: '100%',
     },
+    [ns.collapse]: {
+      'border-collapse': 'collapse',
+      'border-spacing': '0'
+    }
   })
 }

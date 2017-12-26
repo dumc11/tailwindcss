@@ -398,7 +398,7 @@ module.exports = {
   |
   */
 
-  backgroundColors: colors,
+  backgroundColors: Object.assign({ inherit: 'inherit'}, colors),
 
   /*
   |-----------------------------------------------------------------------------
@@ -461,7 +461,10 @@ module.exports = {
   |
   */
 
-  borderColors: Object.assign({ default: colors['grey-light'] }, colors, { inherit: 'inherit' }),
+  borderColors: Object.assign({
+    default: colors['grey-light'],
+    inherit: 'inherit',
+  }, colors),
 
 
   /*
@@ -934,6 +937,22 @@ module.exports = {
   },
 
 
+   /*
+  |-----------------------------------------------------------------------------
+  | Table Stripes
+  |-----------------------------------------------------------------------------
+  |
+  | Class name: .striped--{name}
+  |
+  */
+
+  stripes: {
+    'light-silver': colors['light-silver'],
+    'moon-gray': colors['moon-gray'],
+    'light-gray': colors['light-gray'],
+    'near-white': colors['near-white'],
+  },
+
   /*
   |-----------------------------------------------------------------------------
   | Modules                  https://tailwindcss.com/docs/configuration#modules
@@ -1001,7 +1020,10 @@ module.exports = {
     outline: ['responsive'],
     cms: [],
     typography: ['responsive'],
-    debug: []
+    debug: [],
+    interactive: [],
+    reset: [],
+    stripes: []
   },
 
 
@@ -1091,7 +1113,7 @@ module.exports = {
     cursor: {
       auto: 'cursor-auto',
       default: 'cursor-default',
-      pointer: 'cursor-pointer',
+      pointer: 'pointer',
       notAllowed: 'cursor-not-allowed',
     },
     display: {
@@ -1106,7 +1128,8 @@ module.exports = {
       tableColumn: 'dt-column',
       tableColumnGroup: 'dt-column-group',
       hidden: 'dn',
-      tableFixed: 'dt--fixed'
+      tableFixed: 'dt--fixed',
+      collapse: 'collapse'
     },
     flex: {
       flex: 'flex',
@@ -1174,6 +1197,8 @@ module.exports = {
       headlineLineHeight: 'nested-headline-line-height',
       copyIndent: 'nested-copy-indent',
       copySeparator: 'nested-copy-separator',
+      /* Typo */
+      copySeperator: 'nested-copy-seperator',
       listReset: 'nested-list-reset',
       img: 'nested-img',
       links: 'nested-links'
@@ -1204,6 +1229,8 @@ module.exports = {
       yAuto: 'y-auto',
       scrollingTouch: 'scrolling-touch',
       scrollingAuto: 'scrolling-auto',
+      /* Deprecated */
+      container: 'container'
     },
     pointerEvents: {
       pointerAuto: 'pointer-events-auto',
@@ -1424,7 +1451,31 @@ module.exports = {
       indent: 'indent',
       smallCaps: 'small-caps',
     },
-
+    interactive: {
+      dim: 'dim',
+      hideChild: 'hide-child',
+      underline: 'underline-hover',
+      grow: 'grow',
+      growLarge: 'grow-large',
+      shadow: 'shadow-hover',
+      bg: 'bg-animate',
+      glow: 'glow',
+      hoverInherit: 'hover-inherit',
+      hoverBgInherit: 'hover-bg-inherit'
+    },
+    reset: {
+      link: 'link',
+      list: 'list',
+      input: 'input-reset',
+      button: 'button-reset'
+    },
+    stripes: {
+      base: 'stripe',
+      modifierPrefix: '--',
+      withModifier: 'striped',
+      light: '-light',
+      dark: '-dark',
+    }
   }
 
 }

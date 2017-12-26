@@ -27,6 +27,9 @@ export default function({ cms, naming: { cms: ns } }) {
     .${ns.copySeparator} p+p {
       margin-top: ${cms.copySeparator};
     }
+    .${ns.copySeperator} p+p {
+      margin-top: ${cms.copySeparator};
+    }
     .${ns.img} img {
       width: 100%;
       max-width:100%;
