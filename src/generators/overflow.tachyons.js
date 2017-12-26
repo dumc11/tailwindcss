@@ -12,14 +12,8 @@ export default function({ naming: { overflow: ns } }) {
     [`${ns.base}${ns.xAuto}`]: { 'overflow-x': 'auto' },
     [`${ns.base}${ns.yAuto}`]: { 'overflow-y': 'auto' },
     [`${ns.base}${ns.scroll}`]: { overflow: 'scroll' },
-    [`${ns.base}${ns.xScroll}`]: {
-      'overflow-x': 'auto',
-      '-ms-overflow-style': '-ms-autohiding-scrollbar',
-    },
-    [`${ns.base}${ns.yScroll}`]: {
-      'overflow-y': 'auto',
-      '-ms-overflow-style': '-ms-autohiding-scrollbar',
-    },
+    [`${ns.base}${ns.xScroll}`]: { 'overflow-x': 'scroll' },
+    [`${ns.base}${ns.yScroll}`]: { 'overflow-y': 'scroll' },
     [`${ns.scrollingTouch}`]: { '-webkit-overflow-scrolling': 'touch' },
     [`${ns.scrollingAuto}`]: { '-webkit-overflow-scrolling': 'auto' },
   })

@@ -32,5 +32,14 @@ export default function({ cms, naming: { cms: ns } }) {
       max-width:100%;
       display: block;
     }
+    .${ns.links} a {
+      color:#357edd;
+      transition:color .15s ease-in;
+    }
+    .${ns.links} a:focus,
+    .${ns.links} a:hover {
+      color:#96ccff;
+      transition:color .15s ease-in
+    }
   `).nodes
 }

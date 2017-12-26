@@ -461,7 +461,7 @@ module.exports = {
   |
   */
 
-  borderColors: Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: Object.assign({ default: colors['grey-light'] }, colors, { inherit: 'inherit' }),
 
 
   /*
@@ -1176,6 +1176,7 @@ module.exports = {
       copySeparator: 'nested-copy-separator',
       listReset: 'nested-list-reset',
       img: 'nested-img',
+      links: 'nested-links'
     },
     forms: {
       appearanceNone: 'appearance-none'
@@ -1336,7 +1337,8 @@ module.exports = {
     },
     textColors: {
       base: '',
-      modifierPrefix: ''
+      modifierPrefix: '',
+      inherit: 'color-inherit'
     },
     fonts: {
       base: '',
