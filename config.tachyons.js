@@ -600,8 +600,8 @@ module.exports = {
     '7': '48rem',
     '8': '64rem',
     '9': '96rem',
-    'none': 'none',
-    '100': '100%'
+    '-none': 'none',
+    '-100': '100%'
   },
 
 
@@ -962,6 +962,7 @@ module.exports = {
     outline: ['responsive'],
     cms: [],
     typography: ['responsive'],
+    debug: []
   },
 
 
@@ -1311,7 +1312,7 @@ module.exports = {
     },
     textStyle: {
       italic: 'i',
-      roman: 'roman',
+      roman: 'fs-normal',
       uppercase: 'ttu',
       lowercase: 'ttl',
       capitalize: 'ttc',
@@ -1333,14 +1334,20 @@ module.exports = {
       bold: 'b'
     },
     textWrap: {
-      whitespaceNormal: 'whitespace-normal',
-      whitespaceNoWrap: 'whitespace-no-wrap',
-      whitespacePre: 'whitespace-pre',
-      whitespacePreLine: 'whitespace-pre-line',
-      whitespacePreWrap: 'whitespace-pre-wrap',
+      whitespaceNormal: 'ws-normal',
+      whitespaceNoWrap: 'nowrap',
+      whitespacePre: 'pre',
+      whitespacePreLine: 'pre-line',
+      whitespacePreWrap: 'pre-wrap',
       breakWords: 'break-words',
       breakNormal: 'break-normal',
       truncate: 'truncate'
+    },
+    debug: {
+      debug: 'debug',
+      debugWhite: 'debug-white',
+      debugBlack: 'debug-black',
+      debugGrid: 'debug-grid'
     },
     userSelect: {
       selectNone: 'select-none',
@@ -1373,7 +1380,6 @@ module.exports = {
       measureNarrow: 'measure-narrow',
       indent: 'indent',
       smallCaps: 'small-caps',
-      truncate: 'truncate',
     },
 
   }

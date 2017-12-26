@@ -10,11 +10,6 @@ export default function({ typography, naming: { typography: ns } }) {
       'margin-top': '0',
       'margin-bottom': '0',
     },
-    [ns.smallcaps]: { 'font-variant': 'small-caps' },
-    [ns.truncate]: {
-      'white-space': 'nowrap',
-      overflow: 'hidden',
-      'text-overflow': 'ellipsis',
-    },
+    [ns.smallCaps]: { 'font-variant': 'small-caps' },
   })
 }
