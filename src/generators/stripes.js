@@ -11,13 +11,15 @@ export default function({ stripes, naming: { stripes: ns } }) {
     }
   `).nodes
 
-  classes = classes.concat(_.flatMap(stripes, (color, modifier) => {
-    return postcss.parse(`
+  classes = classes.concat(
+    _.flatMap(stripes, (color, modifier) => {
+      return postcss.parse(`
       .${ns.withModifier}${ns.modifierPrefix}${modifier}:nth-child(odd) {
         background-color: ${color};
       }
     `).nodes[0]
-  }))
+    })
+  )
 
   return classes
 }

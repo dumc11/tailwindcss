@@ -8,9 +8,11 @@ export default function({ textColors, naming: { textColors: ns } }) {
     })
   })
 
-  classes.push(defineClass(ns.inherit, {
-    'color': 'inherit'
-  }))
+  classes.push(
+    defineClass(ns.inherit, {
+      color: 'inherit',
+    })
+  )
 
   return classes
 }

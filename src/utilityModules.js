@@ -108,7 +108,7 @@ if (!process.env.TAILWIND_FLAVOUR || process.env.TAILWIND_FLAVOUR === 'tailwind'
     'debug',
     'interactive',
     'reset',
-    'stripes'
+    'stripes',
   ]
 }
 

@@ -36,11 +36,12 @@ function defineMargin(margin, ns) {
 export default function({ margin, naming: { margin: ns } }) {
   let classes = _.flatten([defineMargin(margin, ns)])
 
-  classes.push(defineClass(ns.center, {
-    'margin-left': 'auto',
-    'margin-right': 'auto'
-  }))
+  classes.push(
+    defineClass(ns.center, {
+      'margin-left': 'auto',
+      'margin-right': 'auto',
+    })
+  )
 
   return classes
 }
-
