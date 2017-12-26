@@ -1126,6 +1126,8 @@ module.exports = {
       yVisible: 'y-visible',
       xHidden: 'x-hidden',
       yHidden: 'y-hidden',
+      xAuto: 'x-auto',
+      yAuto: 'y-auto',
       scrollingTouch: 'scrolling-touch',
       scrollingAuto: 'scrolling-auto',
     },

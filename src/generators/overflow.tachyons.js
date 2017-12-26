@@ -9,6 +9,8 @@ export default function({ naming: { overflow: ns } }) {
     [`${ns.base}${ns.yVisible}`]: { 'overflow-y': 'visible' },
     [`${ns.base}${ns.xHidden}`]: { 'overflow-x': 'hidden' },
     [`${ns.base}${ns.yHidden}`]: { 'overflow-y': 'hidden' },
+    [`${ns.base}${ns.xAuto}`]: { 'overflow-x': 'auto' },
+    [`${ns.base}${ns.yAuto}`]: { 'overflow-y': 'auto' },
     [`${ns.base}${ns.scroll}`]: { overflow: 'scroll' },
     [`${ns.base}${ns.xScroll}`]: {
       'overflow-x': 'auto',
