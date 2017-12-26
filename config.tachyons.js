@@ -1282,12 +1282,12 @@ module.exports = {
       selectText: 'select-text'
     },
     verticalAlign: {
-      alignBaseline: 'align-baseline',
-      alignTop: 'align-top',
-      alignMiddle: 'align-middle',
-      alignBottom: 'align-bottom',
-      alignTextTop: 'align-text-top',
-      alignTextBottom: 'align-text-bottom'
+      alignBaseline: 'v-base',
+      alignTop: 'v-top',
+      alignMiddle: 'v-mid',
+      alignBottom: 'v-btm',
+      alignTextTop: 'v-top-text',
+      alignTextBottom: 'v-btm-text'
     },
     visibility: {
       visible: 'visible',
