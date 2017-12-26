@@ -102,6 +102,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'whitespace',
     'width',
     'zIndex',
+    'outline',
   ]
 }
 

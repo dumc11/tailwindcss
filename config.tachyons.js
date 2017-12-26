@@ -942,6 +942,7 @@ module.exports = {
     aspectRatios: ['responsive'],
     rotate: ['responsive'],
     boxSizing: [],
+    outline: ['responsive']
   },
 
 
@@ -1323,15 +1324,20 @@ module.exports = {
       alignMiddle: 'v-mid',
       alignBottom: 'v-btm',
       alignTextTop: 'v-top-text',
-      alignTextBottom: 'v-btm-text'
+      alignTextBottom: 'v-btm-text',
     },
     visibility: {
       visible: 'visible',
-      invisible: 'invisible'
+      invisible: 'invisible',
     },
     zIndex: {
       base: 'z',
-      modifierPrefix: '-'
+      modifierPrefix: '-',
+    },
+    outline: {
+      base: 'outline',
+      transparent: 'outline-transparent',
+      zero: 'outline-0'
     }
   }
 
