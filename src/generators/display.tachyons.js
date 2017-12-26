@@ -35,5 +35,9 @@ export default function({ naming: { display: ns } }) {
     [ns.tableColumnGroup]: {
       display: 'table-column-group',
     },
+    [ns.tableFixed]: {
+      'table-layout': 'fixed',
+      width: '100%',
+    },
   })
 }

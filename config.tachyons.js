@@ -1064,7 +1064,8 @@ module.exports = {
       tableRowGroup: 'dt-row-group',
       tableColumn: 'dt-column',
       tableColumnGroup: 'dt-column-group',
-      hidden: 'dn'
+      hidden: 'dn',
+      tableFixed: 'dt--fixed'
     },
     flex: {
       flex: 'flex',
