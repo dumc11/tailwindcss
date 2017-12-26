@@ -1102,7 +1102,11 @@ module.exports = {
       floatRight: 'fr',
       floatLeft: 'fl',
       floatNone: 'fn',
-      clearfix: 'cf'
+      clearLeft: 'cl',
+      clearRight: 'cr',
+      clearBoth: 'cb',
+      clearNone: 'cn',
+      clearfix: 'cf',
     },
     forms: {
       appearanceNone: 'appearance-none'
