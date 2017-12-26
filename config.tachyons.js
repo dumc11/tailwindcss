@@ -812,7 +812,6 @@ module.exports = {
     '100': '1',
   },
 
-
   /*
   |-----------------------------------------------------------------------------
   | Aspect Ratio
@@ -839,6 +838,24 @@ module.exports = {
     '5x7': '140%',
     '1x1': '100%'
   },
+
+  /*
+  |-----------------------------------------------------------------------------
+  | CMS                             https://github.com/tachyons-css/tachyons-cms
+  |-----------------------------------------------------------------------------
+  |
+  | CSS module for styling unqualified elements with Tachyons
+  | Class name: .nested-{name}
+  |
+  */
+
+  cms: {
+    'copyLineHeight': '1.5',
+    'headlineLineHeight': '1.5',
+    'copyIndent': '1em',
+    'copySeparator': '1.5em',
+  },
+
   /*
   |-----------------------------------------------------------------------------
   | SVG fill                                   https://tailwindcss.com/docs/svg
@@ -942,7 +959,8 @@ module.exports = {
     aspectRatios: ['responsive'],
     rotate: ['responsive'],
     boxSizing: [],
-    outline: ['responsive']
+    outline: ['responsive'],
+    cms: [],
   },
 
 
@@ -1107,6 +1125,14 @@ module.exports = {
       clearBoth: 'cb',
       clearNone: 'cn',
       clearfix: 'cf',
+    },
+    cms: {
+      copyLineHeight: 'nested-copy-line-height',
+      headlineLineHeight: 'nested-headline-line-height',
+      copyIndent: 'nested-copy-indent',
+      copySeparator: 'nested-copy-separator',
+      listReset: 'nested-list-reset',
+      img: 'nested-img',
     },
     forms: {
       appearanceNone: 'appearance-none'

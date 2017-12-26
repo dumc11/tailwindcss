@@ -103,6 +103,7 @@ if (!process.env.LIBRARY || process.env.LIBRARY === 'tailwind') {
     'width',
     'zIndex',
     'outline',
+    'cms',
   ]
 }
 
