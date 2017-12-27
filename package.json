@@ -18,7 +18,7 @@
   "scripts": {
     "prebabelify": "rimraf lib",
     "babelify": "babel src --out-dir lib",
-    "prepare": "npm run babelify && babel-node src/build.js",
+    "prepare": "npm run babelify && TAILWIND_FLAVOUR=tachyons babel-node src/build.js",
     "watch": "nodemon -e js,css --watch src --exec 'babel-node src/build.js'",
     "style": "eslint .",
     "style:fix": "eslint --fix .",
