@@ -67,8 +67,7 @@ if (process.env.TAILWIND_FLAVOUR !== 'tailwind') {
   }
 }
 
-console.log('Using ', preflight, utilities, base)
-
 Promise.all([buildDistFile(preflight), buildDistFile(utilities), buildDistFile(base)]).then(() => {
   console.log('Finished Building Tailwind!')
+  console.log(`Flavour: ${process.env.TAILWIND_FLAVOUR}`)
 })
