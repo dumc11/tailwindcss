@@ -402,6 +402,23 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
+  | Background with Foreground colors
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your background and contrasting foreground
+  | colors.
+  |
+  | Class name: .bfg-{color}
+  |
+  */
+
+  backgroundForegroundColors: {
+    'black': ['#111', '#f4f4f4'],
+    'white': ['#f4f4f4', '#111']
+  },
+
+  /*
+  |-----------------------------------------------------------------------------
   | Rotate
   |-----------------------------------------------------------------------------
   |
@@ -971,6 +988,7 @@ module.exports = {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
     backgroundColors: ['responsive', 'hover'],
+    backgroundForegroundColors: ['responsive', 'hover'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
@@ -1046,6 +1064,10 @@ module.exports = {
   naming: {
     backgroundColors: {
       base: 'bg',
+      modifierPrefix: '-'
+    },
+    backgroundForegroundColors: {
+      base: 'bfg',
       modifierPrefix: '-'
     },
     backgroundPositions: {
@@ -1429,6 +1451,9 @@ module.exports = {
       alignBottom: 'v-btm',
       alignTextTop: 'v-top-text',
       alignTextBottom: 'v-btm-text',
+      alignSub: 'v-sub',
+      alignInherit: 'v-inherit',
+      alignSuper: 'v-super',
     },
     visibility: {
       visible: 'visible',

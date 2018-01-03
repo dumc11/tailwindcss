@@ -60,6 +60,7 @@ if (!process.env.TAILWIND_FLAVOUR || process.env.TAILWIND_FLAVOUR === 'tailwind'
     'boxSizing',
     'backgroundAttachment',
     'backgroundColors',
+    'backgroundForegroundColors',
     'backgroundPosition',
     'backgroundRepeat',
     'backgroundSize',

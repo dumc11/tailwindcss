@@ -8,5 +8,8 @@ export default function({ naming: { verticalAlign: ns } }) {
     [ns.alignBottom]: { 'vertical-align': 'bottom' },
     [ns.alignTextTop]: { 'vertical-align': 'text-top' },
     [ns.alignTextBottom]: { 'vertical-align': 'text-bottom' },
+    [ns.alignSub]: { 'vertical-align': 'sub' },
+    [ns.alignInherit]: { 'vertical-align': 'inherit' },
+    [ns.alignSuper]: { 'vertical-align': 'super' },
   })
 }
