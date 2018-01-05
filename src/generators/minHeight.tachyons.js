@@ -5,11 +5,11 @@ function defineHeights(heights, ns) {
   return _.map(heights, (size, modifier) => {
     if (modifier.indexOf('vh') !== -1) {
       return defineClass(`${ns.screen}${ns.modifierPrefix}${modifier.replace('vh', '')}`, {
-        height: `${size}`,
+        'min-height': `${size}`,
       })
     } else {
       return defineClass(`${ns.base}${ns.modifierPrefix}${modifier}`, {
-        height: `${size}`,
+        'min-height': `${size}`,
       })
     }
   })
