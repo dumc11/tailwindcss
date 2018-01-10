@@ -1334,7 +1334,8 @@ module.exports = {
     },
     width: {
       base: 'w',
-      modifierPrefix: ''
+      modifierPrefix: '',
+      screen: 'vw'
     },
     maxWidth: {
       base: 'mw',
