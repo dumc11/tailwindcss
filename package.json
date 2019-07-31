@@ -1,5 +1,5 @@
 {
-  "name": "tailwindcss",
+  "name": "@dumc11/tailwindcss",
   "version": "0.4.0",
   "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
   "license": "MIT",
